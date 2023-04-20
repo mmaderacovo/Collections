@@ -1,4 +1,4 @@
-package org.amadera.ejemplos.set;
+package org.amadera.ejemplos.modelo.set;
 
 import java.util.HashSet;
 import java.util.Set;

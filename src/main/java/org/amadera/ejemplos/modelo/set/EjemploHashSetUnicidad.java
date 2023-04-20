@@ -1,8 +1,7 @@
-package org.amadera.ejemplos.set;
+package org.amadera.ejemplos.modelo.set;
 
-import org.amadera.ejemplos.modelo.Alumno;
+import org.amadera.ejemplos.modelo.Modelo.Alumno;
 
-import javax.swing.text.html.HTMLDocument;
 import java.util.*;
 
 public class EjemploHashSetUnicidad {

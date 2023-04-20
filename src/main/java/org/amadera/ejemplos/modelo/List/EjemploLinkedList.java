@@ -1,10 +1,8 @@
-package org.amadera.ejemplos.set;
+package org.amadera.ejemplos.modelo.List;
 
-import org.amadera.ejemplos.modelo.Alumno;
+import org.amadera.ejemplos.modelo.Modelo.Alumno;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
-import java.util.List;
 import java.util.ListIterator;
 
 public class EjemploLinkedList {

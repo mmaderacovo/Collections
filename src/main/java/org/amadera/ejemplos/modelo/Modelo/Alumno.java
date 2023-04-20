@@ -1,4 +1,4 @@
-package org.amadera.ejemplos.modelo;
+package org.amadera.ejemplos.modelo.Modelo;
 
 import java.util.Objects;
 

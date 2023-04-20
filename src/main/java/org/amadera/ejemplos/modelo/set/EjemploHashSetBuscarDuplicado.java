@@ -1,4 +1,4 @@
-package org.amadera.ejemplos.set;
+package org.amadera.ejemplos.modelo.set;
 
 import com.sun.source.doctree.SeeTree;
 
