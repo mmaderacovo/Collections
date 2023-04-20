@@ -5,6 +5,7 @@ import org.amadera.ejemplos.modelo.Alumno;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.ListIterator;
 
 public class EjemploLinkedList {
     public static void main(String[] args) {
@@ -43,8 +44,15 @@ public class EjemploLinkedList {
         lili.set(3, new Alumno("Pedro", 8));
         System.out.println(lili+ " , size "+ lili.size());
 
-
-
-
+        ListIterator<Alumno> li = lili.listIterator();
+        while(li.hasNext()){
+            Alumno alumno =li.next();
+            System.out.println(alumno);
+        }
+        System.out.println("============ Perevious");
+        while (li.hasPrevious()){
+           Alumno alumno = li.previous();
+            System.out.println(alumno);
+        }
     }
 }
