@@ -65,14 +65,13 @@ public class EjemploHashMap {
             if (valor instanceof Map){
                 String nom = (String) persona.get("nombre");
                 Map<String,String> direccionMap= (Map<String, String>)valor;
-                System.out.println("El pais de "+ nom + " es: " + direccionMap.get("pais"));
-                System.out.println("La ciudad de "+nom+ " es: "+ direccionMap.get("ciudad"));
-                System.out.println("El estado de "+nom+ " es: "+ direccionMap.get("estado"));
+               for(Map.Entry<String,String> parDir:direccionMap.entrySet()){
+                   System.out.println(parDir.getKey()+" => " + parDir.getValue());
+               }
             }else {
             System.out.println(par.getKey() +"=>"+ valor);
             }
         }
-
         System.out.println(" =============== keySet");
         for (String llave: persona.keySet()){
             Object valor = persona.get(llave);
@@ -90,15 +89,11 @@ public class EjemploHashMap {
         persona.forEach((llave,valor)->{
             System.out.println(llave +"=> " + valor);
         });
-
         System.out.println();
         System.out.println("Total= "+ persona.size());
         System.out.println("Contiene elementos= " + !persona.isEmpty());
         
         persona.replace("nombre","Pablo");
         System.out.println("persona = " + persona);
-
-
-
     }
 }
